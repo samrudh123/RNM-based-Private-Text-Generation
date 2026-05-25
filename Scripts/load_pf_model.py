@@ -18,7 +18,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 
 MODEL_NAME = "meta-llama/Llama-3.2-3B-Instruct"
-LORA_PATH = "./pf_mle_lora/checkpoint-2000"       # from pf_mle_train.py
+LORA_PATH = "./pf_mle_lora/checkpoint-2000"       # from pf_mle_train.py, add the necessary checkpoint number if you want a different one
 MERGED_PATH = "./pf_mle_merged"          # standalone merged model
 # HF_TOKEN = os.environ.get("HF_TOKEN", None)
 
