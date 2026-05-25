@@ -1,0 +1,176 @@
+2026-05-11 14:24:40,785 [INFO] GPU: NVIDIA A100 80GB PCIe
+2026-05-11 14:24:40,785 [INFO] VRAM: 85.1 GB
+2026-05-11 14:24:41,109 [INFO] HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-05-11 14:24:41,112 [WARNING] Note: Environment variable`HF_TOKEN` is set and is the current active token independently from the token you've just configured.
+2026-05-11 14:24:41,112 [INFO] Logged into HuggingFace
+2026-05-11 14:24:41,112 [INFO] Loading tokenizer: meta-llama/Llama-3.2-3B-Instruct
+2026-05-11 14:24:41,362 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-05-11 14:24:41,628 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-11 14:24:41,869 [INFO] HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.2-3B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-11 14:24:42,154 [INFO] HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.2-3B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-11 14:24:43,733 [INFO] HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.2-3B-Instruct "HTTP/1.1 200 OK"
+2026-05-11 14:24:43,850 [INFO] Vocab size: 128256
+2026-05-11 14:24:43,851 [INFO] Loading model: meta-llama/Llama-3.2-3B-Instruct (4-bit NF4)
+2026-05-11 14:24:44,099 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-05-11 14:24:44,365 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-11 14:24:44,636 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-05-11 14:24:56,604 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-05-11 14:24:56,938 [INFO] GPU memory after model: 3.07 GB
+2026-05-11 14:24:56,940 [INFO] Sanity check: PF loss on dummy input...
+2026-05-11 14:24:57,138 [INFO]   PF loss (V=1000) = 7.7042 (expect ~5-8)
+2026-05-11 14:24:57,138 [INFO] Loading WikiText-103 train split...
+2026-05-11 14:24:57,411 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/wikitext/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 14:24:57,670 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 14:24:57,701 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/Salesforce/wikitext/b08601e04326c79dfdd32d625aee71d232d685c3/README.md "HTTP/1.1 200 OK"
+2026-05-11 14:24:57,959 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 14:24:58,202 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py "HTTP/1.1 404 Not Found"
+2026-05-11 14:24:58,966 [INFO] HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/wikitext/wikitext.py "HTTP/1.1 200 OK"
+2026-05-11 14:24:59,227 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/wikitext/revision/b08601e04326c79dfdd32d625aee71d232d685c3 "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 14:24:59,489 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/Salesforce/wikitext/revision/b08601e04326c79dfdd32d625aee71d232d685c3 "HTTP/1.1 200 OK"
+2026-05-11 14:24:59,793 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/.huggingface.yaml "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 14:25:00,048 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-05-11 14:25:00,479 [INFO] HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=wikitext "HTTP/1.1 404 Not Found"
+2026-05-11 14:25:00,736 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/wikitext/tree/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 14:25:01,000 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/Salesforce/wikitext/tree/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-11 14:25:01,253 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/wikitext/tree/b08601e04326c79dfdd32d625aee71d232d685c3?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 14:25:01,520 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/Salesforce/wikitext/tree/b08601e04326c79dfdd32d625aee71d232d685c3?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-05-11 14:25:01,763 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/dataset_infos.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 14:25:02,018 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-05-11 14:25:02,275 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/wikitext/tree/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-v1?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 14:25:02,538 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/Salesforce/wikitext/tree/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-v1?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-11 14:25:25,123 [INFO] Tokenizing (this takes a minute)...
+2026-05-11 14:35:04,759 [INFO] Total tokens: 120,074,037
+2026-05-11 14:35:10,638 [INFO] Created 80000 chunks of 257 tokens
+2026-05-11 14:35:12,241 [INFO] Trainable params: 9,175,040
+2026-05-11 14:35:12,251 [INFO] ======================================================================
+2026-05-11 14:35:12,251 [INFO] TRAINING START
+2026-05-11 14:35:12,251 [INFO]   max_steps=5000  eff_batch=8  tau=1.1
+2026-05-11 14:35:12,251 [INFO]   n_positions=2  seq_len=256  lr=0.0001
+2026-05-11 14:35:12,251 [INFO]   LoRA r=16  alpha=32  targets=['q_proj', 'k_proj', 'v_proj', 'o_proj']
+2026-05-11 14:35:12,251 [INFO] ======================================================================
+2026-05-11 14:37:19,089 [INFO] step    25/5000 | loss 79.7160 | lr 2.50e-05 | 0.20 it/s | peak 4.3GB | eta 421min
+2026-05-11 14:39:22,481 [INFO] step    50/5000 | loss 74.4261 | lr 5.00e-05 | 0.20 it/s | peak 4.3GB | eta 413min
+2026-05-11 14:41:26,387 [INFO] step    75/5000 | loss 74.9832 | lr 7.50e-05 | 0.20 it/s | peak 4.3GB | eta 409min
+2026-05-11 14:43:29,138 [INFO] step   100/5000 | loss 72.9654 | lr 1.00e-04 | 0.20 it/s | peak 4.3GB | eta 406min
+2026-05-11 14:45:33,152 [INFO] step   125/5000 | loss 67.9769 | lr 1.00e-04 | 0.20 it/s | peak 4.3GB | eta 404min
+2026-05-11 14:47:36,374 [INFO] step   150/5000 | loss 66.5427 | lr 1.00e-04 | 0.20 it/s | peak 4.3GB | eta 401min
+2026-05-11 14:49:40,164 [INFO] step   175/5000 | loss 73.7751 | lr 9.99e-05 | 0.20 it/s | peak 4.3GB | eta 399min
+2026-05-11 14:51:42,811 [INFO] step   200/5000 | loss 66.6154 | lr 9.99e-05 | 0.20 it/s | peak 4.3GB | eta 396min
+2026-05-11 14:53:46,405 [INFO] step   225/5000 | loss 66.8137 | lr 9.98e-05 | 0.20 it/s | peak 4.3GB | eta 394min
+2026-05-11 14:55:50,114 [INFO] step   250/5000 | loss 72.3711 | lr 9.98e-05 | 0.20 it/s | peak 4.3GB | eta 392min
+2026-05-11 14:57:53,300 [INFO] step   275/5000 | loss 65.8644 | lr 9.97e-05 | 0.20 it/s | peak 4.3GB | eta 390min
+2026-05-11 14:59:56,758 [INFO] step   300/5000 | loss 63.8685 | lr 9.96e-05 | 0.20 it/s | peak 4.3GB | eta 388min
+2026-05-11 15:02:00,062 [INFO] step   325/5000 | loss 70.4628 | lr 9.95e-05 | 0.20 it/s | peak 4.3GB | eta 385min
+2026-05-11 15:04:03,950 [INFO] step   350/5000 | loss 60.7104 | lr 9.94e-05 | 0.20 it/s | peak 4.3GB | eta 383min
+2026-05-11 15:06:06,770 [INFO] step   375/5000 | loss 68.8795 | lr 9.92e-05 | 0.20 it/s | peak 4.3GB | eta 381min
+2026-05-11 15:08:08,960 [INFO] step   400/5000 | loss 70.4814 | lr 9.91e-05 | 0.20 it/s | peak 4.3GB | eta 379min
+2026-05-11 15:10:11,982 [INFO] step   425/5000 | loss 64.0237 | lr 9.89e-05 | 0.20 it/s | peak 4.3GB | eta 377min
+2026-05-11 15:12:15,013 [INFO] step   450/5000 | loss 65.3265 | lr 9.87e-05 | 0.20 it/s | peak 4.3GB | eta 375min
+2026-05-11 15:14:17,561 [INFO] step   475/5000 | loss 58.7881 | lr 9.86e-05 | 0.20 it/s | peak 4.3GB | eta 372min
+2026-05-11 15:16:21,382 [INFO] step   500/5000 | loss 66.9220 | lr 9.84e-05 | 0.20 it/s | peak 4.3GB | eta 370min
+2026-05-11 15:18:25,519 [INFO] step   525/5000 | loss 65.5133 | lr 9.82e-05 | 0.20 it/s | peak 4.3GB | eta 368min
+2026-05-11 15:20:29,031 [INFO] step   550/5000 | loss 71.2768 | lr 9.79e-05 | 0.20 it/s | peak 4.3GB | eta 366min
+2026-05-11 15:22:32,189 [INFO] step   575/5000 | loss 63.6972 | lr 9.77e-05 | 0.20 it/s | peak 4.3GB | eta 364min
+2026-05-11 15:24:35,307 [INFO] step   600/5000 | loss 72.2708 | lr 9.75e-05 | 0.20 it/s | peak 4.3GB | eta 362min
+2026-05-11 15:26:38,903 [INFO] step   625/5000 | loss 58.6002 | lr 9.72e-05 | 0.20 it/s | peak 4.3GB | eta 360min
+2026-05-11 15:28:42,274 [INFO] step   650/5000 | loss 64.3353 | lr 9.69e-05 | 0.20 it/s | peak 4.3GB | eta 358min
+2026-05-11 15:30:45,573 [INFO] step   675/5000 | loss 69.7494 | lr 9.66e-05 | 0.20 it/s | peak 4.3GB | eta 356min
+2026-05-11 15:32:49,582 [INFO] step   700/5000 | loss 68.7720 | lr 9.63e-05 | 0.20 it/s | peak 4.3GB | eta 354min
+2026-05-11 15:34:53,387 [INFO] step   725/5000 | loss 67.1972 | lr 9.60e-05 | 0.20 it/s | peak 4.3GB | eta 352min
+2026-05-11 15:36:57,522 [INFO] step   750/5000 | loss 68.2399 | lr 9.57e-05 | 0.20 it/s | peak 4.3GB | eta 350min
+2026-05-11 15:39:02,457 [INFO] step   775/5000 | loss 65.5945 | lr 9.54e-05 | 0.20 it/s | peak 4.3GB | eta 348min
+2026-05-11 15:41:07,534 [INFO] step   800/5000 | loss 64.6680 | lr 9.50e-05 | 0.20 it/s | peak 4.3GB | eta 346min
+2026-05-11 15:43:12,592 [INFO] step   825/5000 | loss 63.9100 | lr 9.47e-05 | 0.20 it/s | peak 4.3GB | eta 344min
+2026-05-11 15:45:18,066 [INFO] step   850/5000 | loss 67.7043 | lr 9.43e-05 | 0.20 it/s | peak 4.3GB | eta 342min
+2026-05-11 15:47:22,505 [INFO] step   875/5000 | loss 62.9983 | lr 9.40e-05 | 0.20 it/s | peak 4.3GB | eta 340min
+2026-05-11 15:49:28,058 [INFO] step   900/5000 | loss 64.5571 | lr 9.36e-05 | 0.20 it/s | peak 4.3GB | eta 338min
+2026-05-11 15:51:31,962 [INFO] step   925/5000 | loss 65.3811 | lr 9.32e-05 | 0.20 it/s | peak 4.3GB | eta 336min
+2026-05-11 15:53:36,360 [INFO] step   950/5000 | loss 63.9508 | lr 9.28e-05 | 0.20 it/s | peak 4.3GB | eta 334min
+2026-05-11 15:55:40,442 [INFO] step   975/5000 | loss 64.3907 | lr 9.23e-05 | 0.20 it/s | peak 4.3GB | eta 332min
+2026-05-11 15:57:45,064 [INFO] step  1000/5000 | loss 62.2503 | lr 9.19e-05 | 0.20 it/s | peak 4.3GB | eta 330min
+2026-05-11 15:57:45,423 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-05-11 15:57:45,674 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-05-11 15:57:46,043 [INFO] Saved checkpoint: ./pf_mle_lora/checkpoint-1000
+2026-05-11 15:57:46,316 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/wikitext/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 15:57:46,581 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 15:57:46,589 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/Salesforce/wikitext/b08601e04326c79dfdd32d625aee71d232d685c3/README.md "HTTP/1.1 200 OK"
+2026-05-11 15:57:46,858 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 15:57:47,095 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py "HTTP/1.1 404 Not Found"
+2026-05-11 15:57:47,860 [INFO] HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/wikitext/wikitext.py "HTTP/1.1 200 OK"
+2026-05-11 15:57:48,124 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/.huggingface.yaml "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 15:57:48,379 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-05-11 15:57:48,932 [INFO] HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=wikitext "HTTP/1.1 404 Not Found"
+2026-05-11 15:57:49,175 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/dataset_infos.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 15:57:49,435 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-05-11 15:57:49,728 [INFO]   VAL: pf_nll=2.823  sm_nll=2.849  gap=-0.026  (n=2)
+2026-05-11 15:59:54,195 [INFO] step  1025/5000 | loss 67.3554 | lr 9.15e-05 | 0.20 it/s | peak 4.3GB | eta 328min
+2026-05-11 16:01:59,009 [INFO] step  1050/5000 | loss 59.2376 | lr 9.10e-05 | 0.20 it/s | peak 4.3GB | eta 326min
+2026-05-11 16:04:03,848 [INFO] step  1075/5000 | loss 63.8626 | lr 9.05e-05 | 0.20 it/s | peak 4.3GB | eta 324min
+2026-05-11 16:06:09,059 [INFO] step  1100/5000 | loss 59.2330 | lr 9.01e-05 | 0.20 it/s | peak 4.3GB | eta 322min
+2026-05-11 16:08:13,272 [INFO] step  1125/5000 | loss 66.3857 | lr 8.96e-05 | 0.20 it/s | peak 4.3GB | eta 320min
+2026-05-11 16:10:18,594 [INFO] step  1150/5000 | loss 64.5232 | lr 8.91e-05 | 0.20 it/s | peak 4.3GB | eta 318min
+2026-05-11 16:12:22,937 [INFO] step  1175/5000 | loss 65.4346 | lr 8.86e-05 | 0.20 it/s | peak 4.3GB | eta 316min
+2026-05-11 16:14:27,094 [INFO] step  1200/5000 | loss 63.0797 | lr 8.81e-05 | 0.20 it/s | peak 4.3GB | eta 314min
+2026-05-11 16:16:30,962 [INFO] step  1225/5000 | loss 59.9862 | lr 8.75e-05 | 0.20 it/s | peak 4.3GB | eta 312min
+2026-05-11 16:18:35,552 [INFO] step  1250/5000 | loss 68.7488 | lr 8.70e-05 | 0.20 it/s | peak 4.3GB | eta 310min
+2026-05-11 16:20:41,066 [INFO] step  1275/5000 | loss 63.2519 | lr 8.65e-05 | 0.20 it/s | peak 4.3GB | eta 308min
+2026-05-11 16:22:44,823 [INFO] step  1300/5000 | loss 65.0371 | lr 8.59e-05 | 0.20 it/s | peak 4.3GB | eta 306min
+2026-05-11 16:24:49,376 [INFO] step  1325/5000 | loss 64.2050 | lr 8.54e-05 | 0.20 it/s | peak 4.3GB | eta 304min
+2026-05-11 16:26:53,805 [INFO] step  1350/5000 | loss 65.4686 | lr 8.48e-05 | 0.20 it/s | peak 4.3GB | eta 302min
+2026-05-11 16:28:59,425 [INFO] step  1375/5000 | loss 64.8512 | lr 8.42e-05 | 0.20 it/s | peak 4.3GB | eta 300min
+2026-05-11 16:31:02,854 [INFO] step  1400/5000 | loss 64.5775 | lr 8.36e-05 | 0.20 it/s | peak 4.3GB | eta 298min
+2026-05-11 16:33:05,638 [INFO] step  1425/5000 | loss 63.3243 | lr 8.30e-05 | 0.20 it/s | peak 4.3GB | eta 296min
+2026-05-11 16:35:10,660 [INFO] step  1450/5000 | loss 62.8730 | lr 8.24e-05 | 0.20 it/s | peak 4.3GB | eta 294min
+2026-05-11 16:37:16,341 [INFO] step  1475/5000 | loss 66.7352 | lr 8.18e-05 | 0.20 it/s | peak 4.3GB | eta 292min
+2026-05-11 16:39:21,181 [INFO] step  1500/5000 | loss 63.0477 | lr 8.12e-05 | 0.20 it/s | peak 4.3GB | eta 290min
+2026-05-11 16:41:25,930 [INFO] step  1525/5000 | loss 61.0659 | lr 8.05e-05 | 0.20 it/s | peak 4.3GB | eta 288min
+2026-05-11 16:43:29,921 [INFO] step  1550/5000 | loss 61.5840 | lr 7.99e-05 | 0.20 it/s | peak 4.3GB | eta 286min
+2026-05-11 16:45:34,094 [INFO] step  1575/5000 | loss 62.8532 | lr 7.93e-05 | 0.20 it/s | peak 4.3GB | eta 283min
+2026-05-11 16:47:38,167 [INFO] step  1600/5000 | loss 60.1201 | lr 7.86e-05 | 0.20 it/s | peak 4.3GB | eta 281min
+2026-05-11 16:49:42,295 [INFO] step  1625/5000 | loss 61.4151 | lr 7.79e-05 | 0.20 it/s | peak 4.3GB | eta 279min
+2026-05-11 16:51:45,773 [INFO] step  1650/5000 | loss 63.5436 | lr 7.73e-05 | 0.20 it/s | peak 4.3GB | eta 277min
+2026-05-11 16:53:50,010 [INFO] step  1675/5000 | loss 54.5013 | lr 7.66e-05 | 0.20 it/s | peak 4.3GB | eta 275min
+2026-05-11 16:55:52,703 [INFO] step  1700/5000 | loss 56.4969 | lr 7.59e-05 | 0.20 it/s | peak 4.3GB | eta 273min
+2026-05-11 16:57:55,592 [INFO] step  1725/5000 | loss 65.2748 | lr 7.52e-05 | 0.20 it/s | peak 4.3GB | eta 271min
+2026-05-11 16:59:59,624 [INFO] step  1750/5000 | loss 67.6459 | lr 7.45e-05 | 0.20 it/s | peak 4.3GB | eta 269min
+2026-05-11 17:02:03,832 [INFO] step  1775/5000 | loss 62.4007 | lr 7.38e-05 | 0.20 it/s | peak 4.3GB | eta 267min
+2026-05-11 17:04:08,828 [INFO] step  1800/5000 | loss 56.2958 | lr 7.31e-05 | 0.20 it/s | peak 4.3GB | eta 265min
+2026-05-11 17:06:12,892 [INFO] step  1825/5000 | loss 63.8365 | lr 7.24e-05 | 0.20 it/s | peak 4.3GB | eta 263min
+2026-05-11 17:08:15,435 [INFO] step  1850/5000 | loss 61.1444 | lr 7.17e-05 | 0.20 it/s | peak 4.3GB | eta 261min
+2026-05-11 17:10:19,236 [INFO] step  1875/5000 | loss 58.6058 | lr 7.10e-05 | 0.20 it/s | peak 4.3GB | eta 259min
+2026-05-11 17:12:23,009 [INFO] step  1900/5000 | loss 68.5116 | lr 7.02e-05 | 0.20 it/s | peak 4.3GB | eta 256min
+2026-05-11 17:14:27,243 [INFO] step  1925/5000 | loss 57.1723 | lr 6.95e-05 | 0.20 it/s | peak 4.3GB | eta 254min
+2026-05-11 17:16:31,118 [INFO] step  1950/5000 | loss 68.7325 | lr 6.88e-05 | 0.20 it/s | peak 4.3GB | eta 252min
+2026-05-11 17:18:35,568 [INFO] step  1975/5000 | loss 68.7892 | lr 6.80e-05 | 0.20 it/s | peak 4.3GB | eta 250min
+2026-05-11 17:20:40,100 [INFO] step  2000/5000 | loss 63.7118 | lr 6.73e-05 | 0.20 it/s | peak 4.3GB | eta 248min
+2026-05-11 17:20:40,546 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-05-11 17:20:40,800 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-05-11 17:20:41,104 [INFO] Saved checkpoint: ./pf_mle_lora/checkpoint-2000
+2026-05-11 17:20:41,420 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/wikitext/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 17:20:41,659 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 17:20:41,668 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/Salesforce/wikitext/b08601e04326c79dfdd32d625aee71d232d685c3/README.md "HTTP/1.1 200 OK"
+2026-05-11 17:20:41,961 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 17:20:42,204 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py "HTTP/1.1 404 Not Found"
+2026-05-11 17:20:42,977 [INFO] HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/wikitext/wikitext.py "HTTP/1.1 200 OK"
+2026-05-11 17:20:43,251 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/.huggingface.yaml "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 17:20:43,492 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-05-11 17:20:43,828 [INFO] HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=wikitext "HTTP/1.1 404 Not Found"
+2026-05-11 17:20:44,076 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/dataset_infos.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-11 17:20:44,349 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-05-11 17:20:44,619 [INFO]   VAL: pf_nll=2.852  sm_nll=2.874  gap=-0.022  (n=2)
+2026-05-11 17:22:48,029 [INFO] step  2025/5000 | loss 58.4073 | lr 6.65e-05 | 0.20 it/s | peak 4.3GB | eta 246min
+2026-05-11 17:24:52,986 [INFO] step  2050/5000 | loss 57.6953 | lr 6.58e-05 | 0.20 it/s | peak 4.3GB | eta 244min
+2026-05-11 17:26:56,226 [INFO] step  2075/5000 | loss 65.0411 | lr 6.50e-05 | 0.20 it/s | peak 4.3GB | eta 242min
+2026-05-11 17:29:00,667 [INFO] step  2100/5000 | loss 64.3006 | lr 6.42e-05 | 0.20 it/s | peak 4.3GB | eta 240min
+2026-05-11 17:31:04,751 [INFO] step  2125/5000 | loss 64.3897 | lr 6.35e-05 | 0.20 it/s | peak 4.3GB | eta 238min
+2026-05-11 17:33:09,824 [INFO] step  2150/5000 | loss 60.9149 | lr 6.27e-05 | 0.20 it/s | peak 4.3GB | eta 236min
+2026-05-11 17:35:14,490 [INFO] step  2175/5000 | loss 64.4081 | lr 6.19e-05 | 0.20 it/s | peak 4.3GB | eta 234min
+2026-05-11 17:37:18,432 [INFO] step  2200/5000 | loss 63.4121 | lr 6.11e-05 | 0.20 it/s | peak 4.3GB | eta 232min
+2026-05-11 17:39:22,734 [INFO] step  2225/5000 | loss 69.5100 | lr 6.03e-05 | 0.20 it/s | peak 4.3GB | eta 230min
+2026-05-11 17:41:26,199 [INFO] step  2250/5000 | loss 59.2337 | lr 5.96e-05 | 0.20 it/s | peak 4.3GB | eta 228min
+2026-05-11 17:43:32,632 [INFO] step  2275/5000 | loss 64.1970 | lr 5.88e-05 | 0.20 it/s | peak 4.3GB | eta 226min
+2026-05-11 17:45:37,618 [INFO] step  2300/5000 | loss 62.5495 | lr 5.80e-05 | 0.20 it/s | peak 4.3GB | eta 224min
+2026-05-11 17:47:41,768 [INFO] step  2325/5000 | loss 62.7854 | lr 5.72e-05 | 0.20 it/s | peak 4.3GB | eta 221min
+2026-05-11 17:49:46,984 [INFO] step  2350/5000 | loss 63.5626 | lr 5.64e-05 | 0.20 it/s | peak 4.3GB | eta 219min
+2026-05-11 17:51:50,306 [INFO] step  2375/5000 | loss 67.0227 | lr 5.56e-05 | 0.20 it/s | peak 4.3GB | eta 217min
+2026-05-11 17:53:55,472 [INFO] step  2400/5000 | loss 67.3611 | lr 5.48e-05 | 0.20 it/s | peak 4.3GB | eta 215min

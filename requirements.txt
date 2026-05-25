@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+accelerate
+datasets
+pytest
+pytest-mock
+torch
+tqdm
+transformers
+mauve-text
+matplotlib
+peft
