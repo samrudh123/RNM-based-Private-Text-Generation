@@ -37,4 +37,18 @@ pip install -r requirements.txt
 
 ## 4) Run sh files to generate the output in the respective folders
 
-Run the script which has explicit Python calls in the repository.
+After you update each script with your paths/tokens, run them in this order:
+
+1. `pf_mle_train.sh` (train the PF MLE model)
+2. `load_lora_model.sh` (load the trained model)
+3. `text_gen.sh` (generate base texts)
+4. `text_gen_fine_tuned.sh` (generate fine-tuned texts)
+5. `combine_json_files.sh` (merge part files into combined JSONs)
+6. `mauve_scores.sh` (compute Mauve scores)
+7. `perplexity.sh` (compute perplexity differences)
+
+Notes:
+- Update `HF_TOKEN`, `HF_HOME`, and the `<venv>` path in each script before running.
+- Use `bash <script>.sh` locally or `sbatch <script>.sh` on a SLURM cluster.
+
+
