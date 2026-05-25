@@ -1,0 +1,1 @@
+python3 Scripts/combine_json_parts.py
